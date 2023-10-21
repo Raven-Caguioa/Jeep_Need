@@ -7,29 +7,22 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
+import com.example.jeep_need.databinding.FragmentAboutUsBinding
 import com.example.jeep_need.databinding.FragmentLoginBinding
 
-
-class Login : Fragment() {
-    private lateinit var binding: FragmentLoginBinding
+class AboutUs : Fragment() {
+    private lateinit var binding: FragmentAboutUsBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentLoginBinding.inflate(inflater,container,false)
+        binding = FragmentAboutUsBinding.inflate(inflater,container,false)
 
-        binding.btSignIn.setOnClickListener {
-            findNavController().navigate(R.id.action_login_to_home)
+        binding.btRethorn.setOnClickListener {
+            findNavController().navigate(R.id.action_aboutUs_to_profile)
         }
-        binding.tvSignUp.setOnClickListener {
-            findNavController().navigate(R.id.action_login_to_signup_choice)
-        }
-        binding.tvForgotPassword.setOnClickListener {
-            findNavController().navigate(R.id.action_login_nav_to_forgotPassword)
-        }
-
         return binding.root
 
     }

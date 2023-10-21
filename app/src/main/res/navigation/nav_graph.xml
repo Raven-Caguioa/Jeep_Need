@@ -75,6 +75,9 @@
         <action
             android:id="@+id/action_home_to_driverList"
             app:destination="@id/driverList" />
+        <action
+            android:id="@+id/action_home_to_aboutUs"
+            app:destination="@id/aboutUs" />
     </fragment>
     <fragment
         android:id="@+id/map"
@@ -96,6 +99,9 @@
         <action
             android:id="@+id/action_profile_to_home"
             app:destination="@id/home" />
+        <action
+            android:id="@+id/action_profile_to_aboutUs"
+            app:destination="@id/aboutUs" />
     </fragment>
     <fragment
         android:id="@+id/signup_Driver"
@@ -144,5 +150,17 @@
         <action
             android:id="@+id/action_driverList_to_home"
             app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUs"
+        android:name="com.example.jeep_need.AboutUs"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" >
+        <action
+            android:id="@+id/action_aboutUs_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_aboutUs_to_profile"
+            app:destination="@id/profile" />
     </fragment>
 </navigation>
