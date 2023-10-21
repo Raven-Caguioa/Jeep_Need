@@ -7,13 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
-import com.example.jeep_need.databinding.FragmentLoginBinding
 import com.example.jeep_need.databinding.FragmentSignupChoiceBinding
 
 class Signup_choice : Fragment() {
     private lateinit var binding: FragmentSignupChoiceBinding
-    private lateinit var btDriver : TextView
-    private lateinit var btPassenger : TextView
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -24,7 +22,7 @@ class Signup_choice : Fragment() {
         binding.btDriver.setOnClickListener {
             findNavController().navigate(R.id.action_signup_choice_to_signup_Driver)
         }
-        binding.btDriver.setOnClickListener {
+        binding.btPassenger.setOnClickListener {
             findNavController().navigate(R.id.action_signup_choice_to_signup_Passenger)
         }
         return binding.root
