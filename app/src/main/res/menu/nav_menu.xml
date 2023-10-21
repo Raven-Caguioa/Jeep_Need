@@ -20,11 +20,11 @@
             android:title="Profile"/>
 
         <item
-            android:id="@+id/nav_rating"
+            android:id="@+id/capacity2"
             android:icon="@drawable/ic_rating"
-            android:title="Ratings"/>
+            android:title="Capcity"/>
         <item
-            android:id="@+id/landingPage"
+            android:id="@+id/login_nav"
             android:icon="@drawable/ic_logout"
             android:title="Logout"/>
     </group>
