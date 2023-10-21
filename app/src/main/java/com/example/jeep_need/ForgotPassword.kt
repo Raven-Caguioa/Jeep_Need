@@ -7,11 +7,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
+import com.example.jeep_need.databinding.FragmentForgotPasswordBinding
 import com.example.jeep_need.databinding.FragmentLoginBinding
 
-
-class Login : Fragment() {
-    private lateinit var binding: FragmentLoginBinding
+class ForgotPassword : Fragment() {
+    private lateinit var binding: FragmentForgotPasswordBinding
     private lateinit var btSignin : ImageView
     private lateinit var tvSignUp : ImageView
     override fun onCreateView(
@@ -19,16 +19,13 @@ class Login : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentLoginBinding.inflate(inflater,container,false)
+        binding = FragmentForgotPasswordBinding.inflate(inflater,container,false)
 
-        binding.btSignIn.setOnClickListener {
-            findNavController().navigate(R.id.action_login_to_home)
+        binding.btReturn.setOnClickListener {
+            findNavController().navigate(R.id.action_forgotPassword_to_login_nav)
         }
-        binding.tvSignUp.setOnClickListener {
-            findNavController().navigate(R.id.action_login_to_signup_choice)
-        }
-        binding.tvForgotPassword.setOnClickListener {
-            findNavController().navigate(R.id.action_login_nav_to_forgotPassword)
+        binding.btUpdatePass.setOnClickListener {
+            findNavController().navigate(R.id.action_forgotPassword_to_login_nav)
         }
 
         return binding.root

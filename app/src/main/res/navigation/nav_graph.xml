@@ -21,6 +21,9 @@
         <action
             android:id="@+id/action_login_to_home"
             app:destination="@id/home" />
+        <action
+            android:id="@+id/action_login_nav_to_forgotPassword"
+            app:destination="@id/forgotPassword" />
     </fragment>
     <fragment
         android:id="@+id/signup_choice"
@@ -69,6 +72,9 @@
         <action
             android:id="@+id/action_home_to_login_nav"
             app:destination="@id/login_nav" />
+        <action
+            android:id="@+id/action_home_to_driverList"
+            app:destination="@id/driverList" />
     </fragment>
     <fragment
         android:id="@+id/map"
@@ -119,6 +125,24 @@
         tools:layout="@layout/fragment_jeep_capacity" >
         <action
             android:id="@+id/action_capacity2_to_home"
+            app:destination="@id/home" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassword"
+        android:name="com.example.jeep_need.ForgotPassword"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPassword_to_login_nav"
+            app:destination="@id/login_nav" />
+    </fragment>
+    <fragment
+        android:id="@+id/driverList"
+        android:name="com.example.jeep_need.DriverList"
+        android:label="fragment_driver_list"
+        tools:layout="@layout/fragment_driver_list" >
+        <action
+            android:id="@+id/action_driverList_to_home"
             app:destination="@id/home" />
     </fragment>
 </navigation>
