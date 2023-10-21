@@ -47,7 +47,11 @@
         android:id="@+id/editProfile"
         android:name="com.example.jeep_need.EditProfile"
         android:label="fragment_edit_profile"
-        tools:layout="@layout/fragment_edit_profile" />
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfile_to_profile"
+            app:destination="@id/profile" />
+    </fragment>
     <fragment
         android:id="@+id/home"
         android:name="com.example.jeep_need.Home"

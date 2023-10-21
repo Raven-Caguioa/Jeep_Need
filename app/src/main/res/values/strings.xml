@@ -4,4 +4,26 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="open_nav">Open Navigation Drawer</string>
     <string name="close_nav">Close Navigation Drawer</string>
+    <string name="offline">Offline</string>
+    <string name="online">Online</string>
+    <string name="driver_list">Driver List</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="confirm">Confirm</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="jeepneed">JeepNeed</string>
+    <string name="need_a_ride_ntired_of_waiting_n">Need a ride?\nTired of waiting\n</string>
+    <string name="let_s_get_started">Let\'s Get Started</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="are_you_a">Are you a:</string>
+    <string name="driver">Driver</string>
+    <string name="passenger">Passenger</string>
+    <string name="create_a_driver_account">Create a Driver Account</string>
+    <string name="plate_number">Plate Number</string>
+    <string name="already_have_an_account">Already Have an Account?</string>
+    <string name="phone_number">Phone Number</string>
 </resources>

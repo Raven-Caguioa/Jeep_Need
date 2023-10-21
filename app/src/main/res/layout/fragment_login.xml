@@ -26,7 +26,7 @@
             android:layout_height="49dp"
 
             android:gravity="center"
-            android:text="Sign In"
+            android:text="@string/sign_in"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +50,7 @@
             android:id="@+id/textview5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign In"
+            android:text="@string/sign_in"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/bt_sign_in"
             app:layout_constraintEnd_toEndOf="@+id/bt_sign_in"
@@ -64,7 +64,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="35dp"
             android:layout_marginEnd="32dp"
-            android:hint="Username"
+            android:hint="@string/username"
             app:startIconDrawable="@drawable/ic_person"
             app:endIconMode="clear_text"
             style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
@@ -73,6 +73,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvSignIn">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username_SignIn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -84,7 +85,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="32dp"
-            android:hint="Password"
+            android:hint="@string/password"
             app:endIconMode="password_toggle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -92,6 +93,8 @@
             app:startIconDrawable="@drawable/ic_lock">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_SignIn"
+                android:inputType="textPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -105,7 +108,7 @@
         android:background="@drawable/border"
 
         android:gravity="center"
-        android:text="JeepNeed"
+        android:text="@string/jeepneed"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,7 +123,7 @@
         android:layout_height="34dp"
 
         android:gravity="center"
-        android:text="Forgot Password?"
+        android:text="@string/forgot_password"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -133,9 +136,8 @@
         android:id="@+id/tvSignUp"
         android:layout_width="78dp"
         android:layout_height="33dp"
-
         android:gravity="center"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:textColor="@color/lightRed"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
