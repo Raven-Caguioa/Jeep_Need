@@ -105,6 +105,9 @@
         <action
             android:id="@+id/action_profile_to_popupDeleteAccount"
             app:destination="@id/popupDeleteAccount" />
+        <action
+            android:id="@+id/action_profile_to_deleteAccount"
+            app:destination="@id/deleteAccount" />
     </fragment>
     <fragment
         android:id="@+id/signup_Driver"
@@ -174,5 +177,25 @@
         <action
             android:id="@+id/action_popupDeleteAccount_to_profile"
             app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_popupDeleteAccount_to_deleteAccount"
+            app:destination="@id/deleteAccount" />
     </dialog>
+    <fragment
+        android:id="@+id/deleteAccount"
+        android:name="com.example.jeep_need.DeleteAccount"
+        android:label="fragment_delete_account"
+        tools:layout="@layout/fragment_delete_account" >
+        <action
+            android:id="@+id/action_deleteAccount_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_deleteAccount_to_landingPage"
+            app:destination="@id/landingPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/faqs"
+        android:name="com.example.jeep_need.Faqs"
+        android:label="fragment_faqs"
+        tools:layout="@layout/fragment_faqs" />
 </navigation>
