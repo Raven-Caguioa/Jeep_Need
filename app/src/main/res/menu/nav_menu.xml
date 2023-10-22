@@ -22,7 +22,7 @@
         <item
             android:id="@+id/capacity2"
             android:icon="@drawable/ic_rating"
-            android:title="Capcity"/>
+            android:title="Capacity"/>
         <item
             android:id="@+id/login_nav"
             android:icon="@drawable/ic_logout"
