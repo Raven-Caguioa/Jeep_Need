@@ -5,10 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import com.example.jeep_need.databinding.FragmentProfileBinding
-import com.example.jeep_need.databinding.FragmentSignupChoiceBinding
 
 class Profile : Fragment() {
     private lateinit var binding: FragmentProfileBinding
@@ -22,6 +22,10 @@ class Profile : Fragment() {
         binding.btEditProfile.setOnClickListener {
             findNavController().navigate(R.id.action_profile_to_editProfile)
         }
+        binding.btDelete.setOnClickListener{
+            findNavController().navigate(R.id.action_profile_to_popupDeleteAccount)
+        }
         return binding.root
     }
+
 }

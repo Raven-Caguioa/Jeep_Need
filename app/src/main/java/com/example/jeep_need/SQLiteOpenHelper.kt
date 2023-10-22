@@ -18,6 +18,9 @@ class SQLiteOpenHelper(context: FragmentActivity): SQLiteOpenHelper(context, DAT
         private const val PHONE = "phone"
         private const val EMAIL = "email"
         private const val PASSWORD = "password"
+
+
+
     }
 
 
@@ -49,11 +52,11 @@ class SQLiteOpenHelper(context: FragmentActivity): SQLiteOpenHelper(context, DAT
     }
 
 
-    fun login_driver(email: String, password: String):Boolean{
+    fun login_driver(name: String, password: String):Boolean{
         val columns = arrayOf(ID)
         val db = this.readableDatabase
-        val selection = "$EMAIL = ? AND $PASSWORD = ?"
-        val selectionArgs = arrayOf(email,password)
+        val selection = "$NAME = ? AND $PASSWORD = ?"
+        val selectionArgs = arrayOf(name,password)
 
         val cursor = db.query(
             Table_user,
@@ -69,11 +72,11 @@ class SQLiteOpenHelper(context: FragmentActivity): SQLiteOpenHelper(context, DAT
         return  cursorCount
 
     }
-    fun login_passenger(email: String, password: String):Boolean{
+    fun login_passenger(name: String, password: String):Boolean{
         val columns = arrayOf(ID)
         val db = this.readableDatabase
-        val selection = "$EMAIL = ? AND $PASSWORD = ?"
-        val selectionArgs = arrayOf(email,password)
+        val selection = "$NAME = ? AND $PASSWORD = ?"
+        val selectionArgs = arrayOf(name,password)
 
         val cursor = db.query(
             Table_user2,
@@ -117,7 +120,25 @@ class SQLiteOpenHelper(context: FragmentActivity): SQLiteOpenHelper(context, DAT
         db.close()
         return false
     }
+    fun resetPassword(email: String, newPassword: String): Boolean {
+        val db = this.writableDatabase
+        val values = ContentValues()
+        values.put("password", newPassword)
+        val rowsUpdated = db.update(Table_user, values, "email = ?", arrayOf(email))
+        db.close()
+        return rowsUpdated > 0
+    }
+    fun resetPassword2(email: String, newPassword: String): Boolean {
+        val db = this.writableDatabase
+        val values = ContentValues()
+        values.put("password", newPassword)
+        val rowsUpdated = db.update(Table_user2, values, "email = ?", arrayOf(email))
+        db.close()
+        return rowsUpdated > 0
+    }
+
     //fun getAllDriverAcc():List<User_Driver>{
+
     //val columns = arrayOf(ID, NAME, EMAIL)
     //val sortOrder = "$NAME ASC"
     //val userList = arrayListOf<User_Driver>()
@@ -138,6 +159,28 @@ class SQLiteOpenHelper(context: FragmentActivity): SQLiteOpenHelper(context, DAT
     //cursor.close()
     //db.close()
     //return userList
+
+    //val columns = arrayOf(ID, NAME, EMAIL)
+    //val sortOrder = "$NAME ASC"
+    //val userList = arrayListOf<User_Driver>()
+    // db = this.readableDatabase
+    //val query = "SELECT * FROM $Table_user"
+    //val cursor = db.rawQuery(query, null)
+
+    //if(cursor.moveToFirst()){
+    //do {
+    //val id = cursor.getInt(cursor.getColumnIndexOrThrow(ID))
+    //val name = cursor.getString(cursor.getColumnIndexOrThrow(NAME))
+    //val email = cursor.getString(cursor.getColumnIndexOrThrow(EMAIL)
+    //)
+    //val user = User_Driver(id, name, email)
+    //userList.add(user)
+    //} while (cursor.moveToNext())
+    //}
+    //cursor.close()
+    //db.close()
+    //return userList
+
     //}
 
 

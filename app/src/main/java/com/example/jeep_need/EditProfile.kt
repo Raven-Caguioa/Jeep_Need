@@ -23,6 +23,9 @@ class EditProfile : Fragment() {
         binding.btConfirm.setOnClickListener {
             findNavController().navigate(R.id.action_editProfile_to_profile)
         }
+        binding.btRethrone.setOnClickListener {
+            findNavController().navigate(R.id.action_editProfile_to_profile)
+        }
         return binding.root
     }
 }
