@@ -11,12 +11,12 @@ import androidx.navigation.fragment.findNavController
 import com.example.jeep_need.databinding.FragmentLoginBinding
 
 
+
 class Login : Fragment() {
     private lateinit var binding: FragmentLoginBinding
-    private lateinit var btSignin : ImageView
-    private lateinit var tvSignUp : ImageView
+    private lateinit var btSignin: ImageView
+    private lateinit var tvSignUp: ImageView
     //private lateinit var btSignin2 : ImageView
-
     private lateinit var db: SQLiteOpenHelper
 
     override fun onCreateView(
@@ -24,7 +24,7 @@ class Login : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentLoginBinding.inflate(inflater,container,false)
+        binding = FragmentLoginBinding.inflate(inflater, container, false)
         db = SQLiteOpenHelper(requireActivity())
         binding.btSignIn.setOnClickListener {
             val email = binding.usernameSignIn.text.toString()
@@ -45,22 +45,31 @@ class Login : Fragment() {
         return binding.root
 
     }
-    private fun logindriver(email: String, password: String) {
 
+    private fun logindriver(name: String, password: String) {
 
-        if (ValidationUtils.isTextNotEmpty(email) && ValidationUtils.isTextNotEmpty(password)) {
-            if (db.login_driver(email, password)) {
+        val success = db.login_driver(name, password)
+        val isSuccess = db.login_passenger(name, password)
+        if (ValidationUtils.isTextNotEmpty(name) && ValidationUtils.isTextNotEmpty(password)) {
+            if (success) {
                 Toast.makeText(requireActivity(), "Driver logged in!", Toast.LENGTH_SHORT).show()
                 findNavController().navigate(R.id.action_login_to_home)
-            } else if (db.login_passenger(email, password)) {
-                Toast.makeText(requireActivity(), "Passenger logged in!", Toast.LENGTH_SHORT).show()
-                findNavController().navigate(R.id.action_login_to_home)
-            } else {
-                Toast.makeText(requireActivity(), "Invalid email or password", Toast.LENGTH_SHORT).show()
+            } else if (isSuccess) {
+                if (ValidationUtils.isTextNotEmpty(name) && ValidationUtils.isTextNotEmpty(password)) {
+                    if (db.login_driver(name, password)) {
+                        Toast.makeText(requireActivity(), "Driver logged in!", Toast.LENGTH_SHORT).show()
+                        findNavController().navigate(R.id.action_login_to_home)
+                    } else if (db.login_passenger(name, password)) {
+                        Toast.makeText(requireActivity(), "Passenger logged in!", Toast.LENGTH_SHORT).show()
+                        findNavController().navigate(R.id.action_login_to_home)
+                    } else {
+                        Toast.makeText(requireActivity(), "Invalid email or password", Toast.LENGTH_SHORT).show()
+                    }
+                } else {
+                    Toast.makeText(requireActivity(), "Enter all fields!", Toast.LENGTH_SHORT).show()
+                }
             }
-        } else {
-            Toast.makeText(requireActivity(), "Enter all fields!", Toast.LENGTH_SHORT).show()
+
         }
     }
-
 }

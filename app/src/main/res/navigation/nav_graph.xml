@@ -102,6 +102,9 @@
         <action
             android:id="@+id/action_profile_to_aboutUs"
             app:destination="@id/aboutUs" />
+        <action
+            android:id="@+id/action_profile_to_popupDeleteAccount"
+            app:destination="@id/popupDeleteAccount" />
     </fragment>
     <fragment
         android:id="@+id/signup_Driver"
@@ -163,4 +166,13 @@
             android:id="@+id/action_aboutUs_to_profile"
             app:destination="@id/profile" />
     </fragment>
+    <dialog
+        android:id="@+id/popupDeleteAccount"
+        android:name="com.example.jeep_need.PopupDeleteAccount"
+        android:label="fragment_popup_del_acc"
+        tools:layout="@layout/fragment_popup_del_acc" >
+        <action
+            android:id="@+id/action_popupDeleteAccount_to_profile"
+            app:destination="@id/profile" />
+    </dialog>
 </navigation>
