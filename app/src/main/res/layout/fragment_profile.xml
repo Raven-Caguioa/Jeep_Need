@@ -31,7 +31,7 @@
             app:layout_constraintVertical_bias="0.896" />
 
         <TextView
-            android:id="@+id/textView22"
+            android:id="@+id/bt_about_us"
             android:layout_width="149dp"
             android:layout_height="138dp"
             android:background="@drawable/button"

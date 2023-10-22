@@ -9,72 +9,162 @@
 
     <TextView
         android:id="@+id/textView29"
-        android:layout_width="364dp"
-        android:layout_height="652dp"
+        android:layout_width="384dp"
+        android:layout_height="699dp"
         android:background="@drawable/background_border"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="197dp"
-        android:layout_height="58dp"
+        android:layout_width="273dp"
+        android:layout_height="78dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
         android:background="@drawable/border"
         android:gravity="center"
-        android:text="HOME PAGE"
+        android:text="Welcome to JeepNeed"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.041" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="302dp"
-        android:layout_height="215dp"
-        android:background="@drawable/background_border"
-        app:layout_constraintBottom_toBottomOf="@+id/textView29"
+        android:id="@+id/constraintLayout2"
+        android:layout_width="338dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/background_border_thin"
         app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="0.543"
         app:layout_constraintStart_toStartOf="@+id/textView29"
-        app:layout_constraintTop_toTopOf="@+id/textView29">
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
 
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="222dp"
-            android:layout_height="112dp"
-            android:gravity="center"
-            android:text="Are you sure you want to delete your account"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="85dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_border_curve"
+            android:src="@drawable/ic_jeep"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.378" />
-
-        <TextView
-            android:id="@+id/textView27"
-            android:layout_width="80dp"
-            android:layout_height="23dp"
-            android:background="@drawable/button"
-            android:gravity="center"
-            android:text="No"
-            app:layout_constraintStart_toStartOf="@+id/textView16"
-            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView28"
-            android:layout_width="80dp"
-            android:layout_height="25dp"
-            android:background="@drawable/button2"
-            android:gravity="center"
-            android:text="Yes"
-            app:layout_constraintEnd_toEndOf="@+id/textView16"
-            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drivers"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="85dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/background_border_curve"
+            android:src="@drawable/ic_route"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.301" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Routes"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="85dp"
+            android:layout_height="87dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_border_curve"
+            android:src="@drawable/ic_map2"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Map"
+            app:layout_constraintEnd_toEndOf="@+id/imageView5"
+            app:layout_constraintStart_toStartOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Check Here to Get started"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_advertisement"
+        android:layout_width="360dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="198dp"
+        android:background="#BF2196F3"
+        android:orientation="horizontal"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView29"
+        app:layout_constraintHorizontal_bias="0.583"
+        app:layout_constraintStart_toStartOf="@+id/textView29"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <ViewFlipper
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoStart="true"
+            android:flipInterval="3000"
+            android:inAnimation="@android:anim/slide_in_left"
+            android:outAnimation="@android:anim/slide_out_right">
+
+            <ImageView
+                android:id="@+id/imageFlipper1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/house1" />
+
+            <ImageView
+                android:id="@+id/imageFlipper2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/house2" />
+
+            <ImageView
+                android:id="@+id/imageFlipper3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:adjustViewBounds="true"
+                android:src="@drawable/house3" />
+
+        </ViewFlipper>
+
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

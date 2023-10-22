@@ -21,7 +21,7 @@ class PopupDeleteAccount : DialogFragment() {
         val dialogWindow = dialog?.window
         dialogWindow?.setBackgroundDrawableResource(R.drawable.background_border)
         binding.btYes.setOnClickListener {
-            findNavController().navigate(R.id.action_popupDeleteAccount_to_profile)
+            findNavController().navigate(R.id.action_popupDeleteAccount_to_deleteAccount)
             dismiss()
         }
         binding.btNo.setOnClickListener {

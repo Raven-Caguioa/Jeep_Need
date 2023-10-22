@@ -25,6 +25,9 @@ class Profile : Fragment() {
         binding.btDelete.setOnClickListener{
             findNavController().navigate(R.id.action_profile_to_popupDeleteAccount)
         }
+        binding.btAboutUs.setOnClickListener {
+            findNavController().navigate(R.id.action_profile_to_aboutUs)
+        }
         return binding.root
     }
 
