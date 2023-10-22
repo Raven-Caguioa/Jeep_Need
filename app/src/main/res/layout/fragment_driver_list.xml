@@ -22,15 +22,30 @@
         app:layout_constraintTop_toTopOf="parent" >
 
         <TextView
+            android:id="@+id/bt_rethrone2"
+            android:layout_width="311dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="596dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Return"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.584"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
             android:id="@+id/textView15"
             android:layout_width="245dp"
             android:layout_height="59dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="32dp"
             android:background="@drawable/background_icon"
             android:gravity="center"
             android:text="Available Driver \n Earth -> Mars"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,7 +76,7 @@
                 android:layout_marginTop="16dp"
                 android:text="Plate No: 3K3I-D892"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.077"
+                app:layout_constraintHorizontal_bias="0.067"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView17" />
 

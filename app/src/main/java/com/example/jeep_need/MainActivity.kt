@@ -3,6 +3,7 @@ package com.example.jeep_need
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
@@ -45,8 +46,51 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         toggle.syncState()
 
-
-
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            if(destination.id == R.id.login_nav) {
+                toolbar.visibility = View.GONE
+                navigationView.visibility = View.GONE
+            }
+            else if(destination.id == R.id.forgotPassword){
+                toolbar.visibility = View.GONE
+                navigationView.visibility = View.GONE
+            }
+            else if(destination.id == R.id.signup_Passenger){
+                toolbar.visibility = View.GONE
+                navigationView.visibility = View.GONE
+            }
+            else if(destination.id == R.id.signup_Driver){
+                toolbar.visibility = View.GONE
+                navigationView.visibility = View.GONE
+            }
+            else if(destination.id == R.id.signup_choice){
+                toolbar.visibility = View.GONE
+                navigationView.visibility = View.GONE
+            }
+            else if(destination.id == R.id.landingPage){
+                toolbar.visibility = View.GONE
+                navigationView.visibility = View.GONE
+            }
+            else if(destination.id == R.id.home){
+                toolbar.visibility = View.VISIBLE
+                navigationView.visibility = View.VISIBLE
+                toolbar.title = "JeepNeed"
+            }
+            else if(destination.id == R.id.profile){
+                toolbar.visibility = View.VISIBLE
+                navigationView.visibility = View.VISIBLE
+                toolbar.title = "Account"
+            }
+            else if(destination.id == R.id.routes){
+                toolbar.visibility = View.VISIBLE
+                navigationView.visibility = View.VISIBLE
+                toolbar.title = "Account"
+            }
+            else {
+                toolbar.visibility = View.VISIBLE
+                navigationView.visibility = View.VISIBLE
+            }
+        }
     }
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.fragmentContainerView)

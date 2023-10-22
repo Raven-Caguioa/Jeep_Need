@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/iv_Driver"
             android:layout_width="85dp"
             android:layout_height="87dp"
             android:layout_marginStart="20dp"
@@ -64,19 +64,19 @@
             android:layout_height="wrap_content"
             android:text="Drivers"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/imageView"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintEnd_toEndOf="@+id/iv_Driver"
+            app:layout_constraintStart_toStartOf="@+id/iv_Driver"
+            app:layout_constraintTop_toBottomOf="@+id/iv_Driver" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/iv_Route"
             android:layout_width="85dp"
             android:layout_height="87dp"
             android:layout_marginStart="20dp"
             android:background="@drawable/background_border_curve"
             android:src="@drawable/ic_route"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/iv_Driver"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.301" />
 
@@ -85,19 +85,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Routes"
-            app:layout_constraintEnd_toEndOf="@+id/imageView3"
-            app:layout_constraintStart_toStartOf="@+id/imageView3"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            app:layout_constraintEnd_toEndOf="@+id/iv_Route"
+            app:layout_constraintStart_toStartOf="@+id/iv_Route"
+            app:layout_constraintTop_toBottomOf="@+id/iv_Route" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/iv_Map"
             android:layout_width="85dp"
             android:layout_height="87dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/background_border_curve"
             android:src="@drawable/ic_map2"
-            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/iv_Route"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -105,9 +105,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Map"
-            app:layout_constraintEnd_toEndOf="@+id/imageView5"
-            app:layout_constraintStart_toStartOf="@+id/imageView5"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+            app:layout_constraintEnd_toEndOf="@+id/iv_Map"
+            app:layout_constraintStart_toStartOf="@+id/iv_Map"
+            app:layout_constraintTop_toBottomOf="@+id/iv_Map" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -172,10 +172,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="204dp"
+        android:text="Current Available Drivers"
         android:textSize="15sp"
         android:textStyle="bold"
-        android:text="Current Available Drivers"
         app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
 

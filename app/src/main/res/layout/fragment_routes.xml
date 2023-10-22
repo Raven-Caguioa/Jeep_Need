@@ -17,43 +17,80 @@
         android:background="@drawable/background_border">
 
         <TextView
-            android:id="@+id/textView13"
-            android:layout_width="295dp"
-            android:layout_height="58dp"
-            android:layout_marginTop="176dp"
-            android:background="@drawable/button"
-            android:gravity="center"
-            android:text="Earth -> Sun \n"
+            android:id="@+id/textView32"
+            android:layout_width="230dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="404dp"
+            android:text="Not Available Routes atm"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintHorizontal_bias="0.187"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
         <TextView
-            android:id="@+id/textView14"
-            android:layout_width="295dp"
+            android:id="@+id/tv_lingayen"
+            android:layout_width="320dp"
             android:layout_height="58dp"
-            android:layout_marginTop="256dp"
-            android:background="@drawable/button"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button2"
             android:gravity="center"
-            android:text="Earth -> Venus \n"
+            android:text="Lingayen to Dagupan"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_sanfab" />
 
         <TextView
-            android:id="@+id/textView12"
-            android:layout_width="295dp"
+            android:id="@+id/tv_lucao"
+            android:layout_width="320dp"
             android:layout_height="58dp"
-            android:layout_marginTop="96dp"
-            android:background="@drawable/button"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button2"
             android:gravity="center"
-            android:text="Earth -> Jupiter \n"
+            android:text="Dagupan to Lucao"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_lingayen" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="320dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Earth -> Mars \n"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="320dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:gravity="center"
+            android:text="Dagupan to My House"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/tv_sanfab"
+            android:layout_width="320dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button2"
+            android:gravity="center"
+            android:text="San Fabian to Dagupan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_manaoag" />
 
         <TextView
             android:id="@+id/textView8"
@@ -70,25 +107,26 @@
 
         <TextView
             android:id="@+id/textView10"
-            android:layout_width="132dp"
+            android:layout_width="160dp"
             android:layout_height="31dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="40dp"
             android:text="Available Routes"
+            android:textSize="20sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.165"
+            app:layout_constraintHorizontal_bias="0.126"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
         <TextView
-            android:id="@+id/textView11"
-            android:layout_width="295dp"
+            android:id="@+id/tv_manaoag"
+            android:layout_width="320dp"
             android:layout_height="58dp"
-            android:layout_marginTop="12dp"
-            android:background="@drawable/button"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button2"
             android:gravity="center"
-            android:text="Earth -> Mars \n"
+            android:text="Manaoag to Dagupan"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.506"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
     </androidx.constraintlayout.widget.ConstraintLayout>

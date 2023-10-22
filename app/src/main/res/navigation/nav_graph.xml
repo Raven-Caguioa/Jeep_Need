@@ -78,6 +78,9 @@
         <action
             android:id="@+id/action_home_to_aboutUs"
             app:destination="@id/aboutUs" />
+        <action
+            android:id="@+id/action_home_to_routes"
+            app:destination="@id/routes" />
     </fragment>
     <fragment
         android:id="@+id/map"
@@ -156,6 +159,9 @@
         <action
             android:id="@+id/action_driverList_to_home"
             app:destination="@id/home" />
+        <action
+            android:id="@+id/action_driverList_to_home2"
+            app:destination="@id/home" />
     </fragment>
     <fragment
         android:id="@+id/aboutUs"
@@ -198,4 +204,16 @@
         android:name="com.example.jeep_need.Faqs"
         android:label="fragment_faqs"
         tools:layout="@layout/fragment_faqs" />
+    <fragment
+        android:id="@+id/routes"
+        android:name="com.example.jeep_need.Routes"
+        android:label="fragment_routes"
+        tools:layout="@layout/fragment_routes" >
+        <action
+            android:id="@+id/action_routes_to_home"
+            app:destination="@id/home" />
+        <action
+            android:id="@+id/action_routes_to_driverList"
+            app:destination="@id/driverList" />
+    </fragment>
 </navigation>
