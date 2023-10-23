@@ -25,6 +25,9 @@ class Signup_Driver : Fragment() {
         binding.imageView4.setOnClickListener {
             registerDriver()
         }
+        binding.tvSignIn.setOnClickListener {
+            findNavController().navigate(R.id.action_signup_Driver_to_login)
+        }
         return binding.root
     }
     private fun registerDriver() {

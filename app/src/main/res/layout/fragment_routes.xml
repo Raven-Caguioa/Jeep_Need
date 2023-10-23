@@ -56,7 +56,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tv_lingayen" />
 
         <TextView
-            android:id="@+id/textView33"
+            android:id="@+id/tv_earth"
             android:layout_width="320dp"
             android:layout_height="58dp"
             android:layout_marginTop="16dp"
@@ -68,16 +68,16 @@
             app:layout_constraintTop_toBottomOf="@+id/textView32" />
 
         <TextView
-            android:id="@+id/textView34"
+            android:id="@+id/tv_house"
             android:layout_width="320dp"
             android:layout_height="58dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/button"
             android:gravity="center"
-            android:text="Dagupan to My House"
+            android:text="To My House"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_earth" />
 
         <TextView
             android:id="@+id/tv_sanfab"
@@ -129,5 +129,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <ImageView
+            android:id="@+id/bt_back"
+            android:layout_width="43dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_arrow_left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

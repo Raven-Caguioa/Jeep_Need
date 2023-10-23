@@ -17,34 +17,30 @@
         android:background="@drawable/background_border">
 
         <TextView
-            android:id="@+id/textView20"
-            android:layout_width="169dp"
-            android:layout_height="55dp"
-            android:background="@drawable/button"
-            android:gravity="center"
-            android:text="Drivers"
-            android:textSize="30dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.08"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.045" />
-
-        <TextView
             android:id="@+id/textView18"
             android:layout_width="169dp"
             android:layout_height="55dp"
-            android:background="@drawable/button"
+            android:background="@drawable/background_icon"
             android:gravity="center"
             android:text="Map"
-            android:textSize="30dp"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.925"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.045" />
+            app:layout_constraintVertical_bias="0.05" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView2"
+            android:name="com.example.jeep_need.Maps"
+            android:layout_width="352dp"
+            android:layout_height="509dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView18"
+            app:layout_constraintVertical_bias="0.283" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,6 +28,9 @@ class Profile : Fragment() {
         binding.btAboutUs.setOnClickListener {
             findNavController().navigate(R.id.action_profile_to_aboutUs)
         }
+        binding.tvLogout.setOnClickListener {
+            findNavController().navigate(R.id.action_profile_to_login_nav)
+        }
         return binding.root
     }
 

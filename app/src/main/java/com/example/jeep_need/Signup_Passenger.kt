@@ -26,6 +26,9 @@ class Signup_Passenger : Fragment() {
         binding.imageView4.setOnClickListener {
             register()
         }
+        binding.tvSignIn.setOnClickListener {
+            findNavController().navigate(R.id.action_signup_Passenger_to_login)
+        }
         return binding.root
     }
     private fun register() {

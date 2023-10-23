@@ -23,11 +23,7 @@
             android:id="@+id/capacity2"
             android:icon="@drawable/ic_rating"
             android:title="Capacity"/>
-        <item
-            android:id="@+id/login_nav"
-            android:icon="@drawable/ic_logout"
-            android:title="Logout"/>
-    </group>
 
+    </group>
 
 </menu>

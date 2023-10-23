@@ -24,6 +24,12 @@
         <action
             android:id="@+id/action_login_nav_to_forgotPassword"
             app:destination="@id/forgotPassword" />
+        <action
+            android:id="@+id/action_login_nav_self"
+            app:destination="@id/login_nav" />
+        <action
+            android:id="@+id/action_login_nav_to_profile"
+            app:destination="@id/profile" />
     </fragment>
     <fragment
         android:id="@+id/signup_choice"
@@ -81,6 +87,12 @@
         <action
             android:id="@+id/action_home_to_routes"
             app:destination="@id/routes" />
+        <action
+            android:id="@+id/action_home_to_login_nav2"
+            app:destination="@id/login_nav" />
+        <action
+            android:id="@+id/action_home_to_landingPage"
+            app:destination="@id/landingPage" />
     </fragment>
     <fragment
         android:id="@+id/map"
@@ -111,6 +123,9 @@
         <action
             android:id="@+id/action_profile_to_deleteAccount"
             app:destination="@id/deleteAccount" />
+        <action
+            android:id="@+id/action_profile_to_login_nav"
+            app:destination="@id/login_nav" />
     </fragment>
     <fragment
         android:id="@+id/signup_Driver"

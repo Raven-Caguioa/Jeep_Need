@@ -61,7 +61,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_userName"
             android:layout_width="294dp"
-            android:layout_height="54dp"
+            android:layout_height="60dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="32dp"
@@ -87,7 +87,7 @@
             android:id="@+id/til_email"
             style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
             android:layout_width="294dp"
-            android:layout_height="54dp"
+            android:layout_height="60dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="32dp"
@@ -107,7 +107,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_cellNo"
             android:layout_width="294dp"
-            android:layout_height="54dp"
+            android:layout_height="60dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="32dp"
@@ -129,7 +129,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_password"
             android:layout_width="294dp"
-            android:layout_height="54dp"
+            android:layout_height="60dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="32dp"
@@ -151,7 +151,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/til_confirm_password"
             android:layout_width="294dp"
-            android:layout_height="54dp"
+            android:layout_height="60dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="32dp"
