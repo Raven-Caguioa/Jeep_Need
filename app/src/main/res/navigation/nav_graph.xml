@@ -177,6 +177,9 @@
         <action
             android:id="@+id/action_driverList_to_home2"
             app:destination="@id/home" />
+        <action
+            android:id="@+id/action_driverList_to_routes"
+            app:destination="@id/routes" />
     </fragment>
     <fragment
         android:id="@+id/aboutUs"
@@ -213,6 +216,9 @@
         <action
             android:id="@+id/action_deleteAccount_to_landingPage"
             app:destination="@id/landingPage" />
+        <action
+            android:id="@+id/action_deleteAccount_to_login_nav"
+            app:destination="@id/login_nav" />
     </fragment>
     <fragment
         android:id="@+id/faqs"

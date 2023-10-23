@@ -28,6 +28,18 @@ class Routes : Fragment() {
         binding.tvHouse.setOnClickListener {
             Toast.makeText(requireActivity(), "No you Don't", Toast.LENGTH_SHORT).show()
         }
+        binding.tvLingayen.setOnClickListener {
+            findNavController().navigate(R.id.action_routes_to_driverList)
+        }
+        binding.tvManaoag.setOnClickListener {
+            findNavController().navigate(R.id.action_routes_to_driverList)
+        }
+        binding.tvSanfab.setOnClickListener {
+            findNavController().navigate(R.id.action_routes_to_driverList)
+        }
+        binding.tvLucao.setOnClickListener {
+            findNavController().navigate(R.id.action_routes_to_driverList)
+        }
         return binding.root
     }
 

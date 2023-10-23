@@ -94,6 +94,22 @@ class SQLiteOpenHelper(context: FragmentActivity): SQLiteOpenHelper(context, DAT
 
     }
 
+    fun deleteAcc(username: String): Boolean {
+        val db = this.writableDatabase
+
+        // Define the WHERE clause to specify which user's data to delete
+        val whereClause = "username = ?"
+        val whereArgs = arrayOf(username)
+
+        // Delete the user's data from the Userdatalist table
+        val deletedRows = db.delete("Userdata list", whereClause, whereArgs)
+
+
+        db.close()
+
+        return deletedRows > 0
+    }
+
     fun register(name: String, phone: String, email:String, password: String):Boolean{
         val db = this.writableDatabase
         val value = ContentValues()
